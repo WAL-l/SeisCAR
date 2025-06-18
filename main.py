@@ -39,7 +39,7 @@ def train():
     vae_local = VQVAE()
     mar = MAR()
     '''
-    vae_ckpt = './weights/vae_ch160v4096z32.pth'
+    vae_ckpt = './weights/vae.pth'
     # TODO 将vae更改为pl——module
     vae_local.load_state_dict(torch.load(vae_ckpt, map_location='cpu'), strict=True)
     data = DataModule()
